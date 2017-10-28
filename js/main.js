@@ -64,9 +64,9 @@ setTeacher(){
 markAttendance(username, status='present'){
   let student = this.findStudent(username);
   if (status === 'present'){
-    student.markPresent()
+    student.attendance.push(1);
   } else {
-    student.markAbsent()
+    student.attendance.push(0);
   }
   updateRoster(this);
 }
