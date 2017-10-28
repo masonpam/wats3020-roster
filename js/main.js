@@ -28,7 +28,6 @@ calculateAttendance(){
 } else {
   return "0%";
 }
-}
 //Adds a teacher email and honorific
 class Teacher extends Person {
   constructor(name, email);
