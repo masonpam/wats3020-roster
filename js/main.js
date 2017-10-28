@@ -28,10 +28,12 @@ calculateAttendance(){
 } else {
   return "0%";
 }
+}
+}
 //Adds a teacher email and honorific
 class Teacher extends Person {
-  constructor(name, email);
-  super(name, email);
+  constructor(name, email, honorific);
+  super(name, email, honorific);
   this.honorific = honorific;
 }
 //Runs the roster
@@ -56,7 +58,6 @@ setTeacher(){
   let name = prompt('Teacher Full Name:');
   let email = prompt('Teacher Email:');
   let honorific = prompt('Honorific (e.g. Dr., Prof., Mr., Mrs.,):');
-  
   this.teacher = new Teacher(name, email, honorific,);
   updateRoster(this);
 }
@@ -93,7 +94,7 @@ let courseCode = prompt('Enter the course Code (e.g. WATS 3020):', 'TEST 3000');
 let courseTitle = prompt('Course Title', 'TESTING FOR EVERYONE');
 //Prompt for course description
 let myDescription = prompt('Course Description:', 'A great course for all.');
-
+//Object instance of three above data points
 let myCourse = new Course(courseCode, courseTitle, courseDescription);
 
 ///////////////////////////////////////////////////
