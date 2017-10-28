@@ -24,11 +24,9 @@ calculateAttendance(){
     counter = counter + mark;
   }
   let attendancePercentage = counter / this.attendance.length * 100;
-  let displayPercentage = attendancePercentage.toFixed(2);
-  return '${displayPercentage}%';
+  return '${attendancePercentage}%';
 } else {
   return "0%";
-}
 }
 }
 //Adds a teacher email and honorific
