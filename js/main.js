@@ -31,7 +31,7 @@ calculateAttendance(){
 }
 //Adds a teacher email and honorific
 class Teacher extends Person {
-  constructor(name, email, honorific); {
+  constructor(name, email, honorific) {
   super(name, email, honorific);
   this.honorific = honorific;
 }
@@ -71,6 +71,7 @@ markAttendance(username, status='present'){
   }
   updateRoster(this);
 }
+  
 
 
     //////////////////////////////////////////////
@@ -89,7 +90,7 @@ markAttendance(username, status='present'){
 }
 
 //Prompt for course code
-let courseCode = prompt('Enter the course Code (e.g. WATS 3020):', 'TEST 3000');
+let courseCode = prompt('Enter the course Code (e.g. WATS 3020):');
 //Prompt for course title
 let courseTitle = prompt('Course Title', 'TESTING FOR EVERYONE');
 //Prompt for course description
