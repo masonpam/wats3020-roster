@@ -71,7 +71,7 @@ markAttendance(username, status='present'){
   }
   updateRoster(this);
 }
-  
+}
 
 
     //////////////////////////////////////////////
