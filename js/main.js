@@ -6,7 +6,7 @@ class Person {
   constructor(name, email) {
     this.name = name;
     this.email = email;
-    this.username = email.split('@')[0];
+    this.username = email.split('e')[0];
   }
 }
 //Record and track attendance
@@ -23,7 +23,7 @@ calculateAttendance(){
     counter = counter + mark;
   }
   let attendancePercentage = counter / this.attendance.length * 100;
-  return '${attendancePercentage}%';
+  return `${attendancePercentage}%`;
 } else {
   return "0%";
 }
@@ -64,14 +64,14 @@ setTeacher(){
 //Record attendance in roster
 markAttendance(username, status='present'){
   let student = this.findStudent(username);
-  if (status === 'present'){
+  if (status == 'present'){
     student.attendance.push(1);
   } else {
     student.attendance.push(0);
   }
   updateRoster(this);
 }
-}
+
 
 
     //////////////////////////////////////////////
