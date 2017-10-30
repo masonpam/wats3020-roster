@@ -15,7 +15,6 @@ class Student extends Person {
     super(name, email);
     this.attendance = [];
   }
-}
 //Attendance percentage output
 calculateAttendance(){
   if (this.attendance.length > 0) {
@@ -29,11 +28,13 @@ calculateAttendance(){
   return "0%";
 }
 }
+}
 //Adds a teacher email and honorific
 class Teacher extends Person {
-  constructor(name, email, honorific);
+  constructor(name, email, honorific); {
   super(name, email, honorific);
   this.honorific = honorific;
+}
 }
 //Runs the roster
 class Course {
