@@ -52,7 +52,7 @@ addStudent(){
   let newStudent = new Student(name, email);
   this.students.push(newStudent);
   updateRoster(this);
-}
+};
 //Prompts for teacher name and email
 setTeacher(){
   let name = prompt('Teacher Full Name:');
@@ -60,7 +60,7 @@ setTeacher(){
   let honorific = prompt('Honorific (e.g. Dr., Prof., Mr., Mrs.,):');
   this.teacher = new Teacher(name, email, honorific);
   updateRoster(this);
-}
+};
 //Record attendance in roster
 markAttendance(username, status='present'){
   let student = this.findStudent(username);
@@ -70,7 +70,7 @@ markAttendance(username, status='present'){
     student.attendance.push(0);
   }
   updateRoster(this);
-}
+};
 
 
 
