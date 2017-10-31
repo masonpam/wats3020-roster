@@ -92,9 +92,9 @@ markAttendance(username, status='present'){
 //Prompt for course code
 let courseCode = prompt('Enter the course Code (e.g. WATS 3020):');
 //Prompt for course title
-let courseTitle = prompt('Course Title');
+let courseTitle = prompt('Course Title', 'TESTING FOR EVERYONE');
 //Prompt for course description
-let myDescription = prompt('Course Description:');
+let myDescription = prompt('Course Description:', 'A great course for all.');
 //Object instance of three above data points
 let myCourse = new Course(courseCode, courseTitle, courseDescription);
 
