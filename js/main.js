@@ -71,6 +71,13 @@ markAttendance(username, status='present'){
   }
   updateRoster(this);
 }
+
+
+
+    //////////////////////////////////////////////
+    // Methods provided for you -- DO NOT EDIT /////////////////////////////////
+    ////////////////////////////////////////////////////////////////////////////
+
     findStudent(username){
         // This method provided for convenience. It takes in a username and looks
         // for that username on student objects contained in the `this.students`
