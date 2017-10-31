@@ -6,7 +6,7 @@ class Person {
   constructor(name, email) {
     this.name = name;
     this.email = email;
-    this.username = email.split('e')[0];
+    this.username = email.split('@')[0];
   }
 }
 //Record and track attendance
@@ -71,13 +71,6 @@ markAttendance(username, status='present'){
   }
   updateRoster(this);
 }
-
-
-
-    //////////////////////////////////////////////
-    // Methods provided for you -- DO NOT EDIT /////////////////////////////////
-    ////////////////////////////////////////////////////////////////////////////
-
     findStudent(username){
         // This method provided for convenience. It takes in a username and looks
         // for that username on student objects contained in the `this.students`
@@ -92,9 +85,9 @@ markAttendance(username, status='present'){
 //Prompt for course code
 let courseCode = prompt('Enter the course Code (e.g. WATS 3020):');
 //Prompt for course title
-let courseTitle = prompt('Course Title', 'TESTING FOR EVERYONE');
+let courseTitle = prompt('Course Title');
 //Prompt for course description
-let myDescription = prompt('Course Description:', 'A great course for all.');
+let myDescription = prompt('Course Description:');
 //Object instance of three above data points
 let myCourse = new Course(courseCode, courseTitle, courseDescription);
 
