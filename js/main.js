@@ -96,7 +96,7 @@ let courseTitle = prompt('Course Title', 'TESTING FOR EVERYONE');
 //Prompt for course description
 let myDescription = prompt('Course Description:', 'A great course for all.');
 //Object instance of three above data points
-let myCourse = new Course(courseCode, courseTitle, courseDescription);
+let myCourse = new Course(courseCode, courseTitle, myDescription);
 
 ///////////////////////////////////////////////////
 //////// Main Script /////////////////////////////
